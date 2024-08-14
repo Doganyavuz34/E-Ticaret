@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+
+@{await Html.RenderPartialAsync("_Head"); }
+
+<body>
+    
+@{
+    await Html.RenderPartialAsync("_PreLoader");
+    await Html.RenderPartialAsync("_Header");
+     }
+
+  @RenderBody()
+
+
+
+
+
+@{await Html.RenderPartialAsync("_Foother"); }
+@{await Html.RenderPartialAsync("_Scripts"); }
+
+   
+</body>
+
+</html>
